@@ -17,19 +17,7 @@
 
 <body>    
 <script type="text/javascript">
-function recognizeSpeech(){
-                    var maxMatches = 1;
-                    var promptString = "Speak now";
-                    window.plugins.speechrecognizer.startRecognize(
-                        function(result){
-                            alert(result);
-                            udptransmit.initialize("18.85.35.196", 8002);
-                            udptransmit.sendMessage("{'speech : " + result + "'}");
-                        },
-                        function(errorMessage){
-                            console.log("Got error: " + errorMessage);
-                            }, maxMatches, promptString, "en-US");
-                }
+
 </script>
   <ons-screen>
 
