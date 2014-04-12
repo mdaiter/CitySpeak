@@ -1,9 +1,19 @@
-<ons-page class="center">
+<script type="text/javscript">
+    function LivingRoomController($scope){
+        $scope.position = "Default Mode";
+        $scope.pushData = function(){
+            var push = {"furniture" : "Living Room", "position" : $scope.position};
+            udptransmit.initialize("18.85.34.196", 8002);
+            udptransmit.sendMessage(JSON.stringify(push));
+        };
+    }
+</script>
+<ons-page class="center" ng-controller="LivingRoomController">
     <h2>Choose Mode</h2>
-    <ons-radio-button ng-model="position" value="Default Mode" right-label="Default Mode" name="level-group"></ons-radio-button>
-    <ons-radio-button ng-model="position" value="Sleep Mode" right-label="Sleep Mode" name="level-group"></ons-radio-button>
-    <ons-radio-button ng-model="position" value="Work Mode" right-label="Work Mode" name="level-group"></ons-radio-button>
-    <ons-radio-button ng-model="position" value="Dining Mode" right-label="Dining Mode" name="level-group"></ons-radio-button>
-    <ons-radio-button ng-model="position" value="Move Into Living Room" right-label="Move Into Living Room" name="level-group"></ons-radio-button>
-    <ons-radio-button ng-model="position" value="Move Out Of Living Room" right-label="Move Out Of Living Room" name="level-group"></ons-radio-button>
+    <ons-radio-button ng-change="pushData()" ng-model="position" value="Default Mode" right-label="Default Mode" name="level-group"></ons-radio-button>
+    <ons-radio-button ng-change="pushData()" ng-model="position" value="Sleep Mode" right-label="Sleep Mode" name="level-group"></ons-radio-button>
+    <ons-radio-button ng-change="pushData()" ng-model="position" value="Work Mode" right-label="Work Mode" name="level-group"></ons-radio-button>
+    <ons-radio-button ng-change="pushData()" ng-model="position" value="Dining Mode" right-label="Dining Mode" name="level-group"></ons-radio-button>
+    <ons-radio-button ng-change="pushData()" ng-model="position" value="Move Into Living Room" right-label="Move Into Living Room" name="level-group"></ons-radio-button>
+    <ons-radio-button ng-change="pushData()" ng-model="position" value="Move Out Of Living Room" right-label="Move Out Of Living Room" name="level-group"></ons-radio-button>
  </ons-page>

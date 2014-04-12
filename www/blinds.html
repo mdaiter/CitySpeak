@@ -1,6 +1,16 @@
+<script type="text/javascript">
+    function BlindsController($scope){
+        $scope.position = "Up";
+        $scope.pushData = function(){
+            var push = {"furniture" : "blinds", "position" : $scope.position};
+            udptransmit.initialize("18.85.34.196", 8002);
+            udptransmit.sendMessage(JSON.stringify(push));
+        };
+    }
+</script>
 <ons-page class="center">
     <h2>Choose Position</h2>
-    <ons-radio-button ng-model="position" value="Up" right-label="Up" name="level-group"></ons-radio-button>
-    <ons-radio-button ng-model="position" value="Down" right-label="Down" name="level-group"></ons-radio-button>
-    <ons-radio-button ng-model="position" value="Stop" right-label="Stop" name="level-group"></ons-radio-button>
+    <ons-radio-button ng-change="pushData()" ng-model="position" value="Up" right-label="Up" name="level-group"></ons-radio-button>
+    <ons-radio-button ng-change="pushData()" ng-model="position" value="Down" right-label="Down" name="level-group"></ons-radio-button>
+    <ons-radio-button ng-change="pushData()" ng-model="position" value="Stop" right-label="Stop" name="level-group"></ons-radio-button>
 </ons-page>
