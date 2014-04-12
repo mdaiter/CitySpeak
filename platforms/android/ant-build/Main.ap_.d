@@ -36,12 +36,9 @@
 /home/msd/Code/Node/CitySpeak/platforms/android/assets/www/img/logo.png \
 /home/msd/Code/Node/CitySpeak/platforms/android/assets/www/plugins/edu.uic.udptransmit \
 /home/msd/Code/Node/CitySpeak/platforms/android/assets/www/plugins/com.phonegap.plugins.speech \
-/home/msd/Code/Node/CitySpeak/platforms/android/assets/www/plugins/in.girish.datagram \
 /home/msd/Code/Node/CitySpeak/platforms/android/assets/www/plugins/edu.uic.udptransmit/www \
 /home/msd/Code/Node/CitySpeak/platforms/android/assets/www/plugins/edu.uic.udptransmit/www/udptransmit.js \
 /home/msd/Code/Node/CitySpeak/platforms/android/assets/www/plugins/com.phonegap.plugins.speech/SpeechRecognizer.js \
-/home/msd/Code/Node/CitySpeak/platforms/android/assets/www/plugins/in.girish.datagram/www \
-/home/msd/Code/Node/CitySpeak/platforms/android/assets/www/plugins/in.girish.datagram/www/datagram.js \
 /home/msd/Code/Node/CitySpeak/platforms/android/assets/www/css/index.css \
 /home/msd/Code/Node/CitySpeak/platforms/android/assets/www/lib/onsen \
 /home/msd/Code/Node/CitySpeak/platforms/android/assets/www/lib/onsen/js \

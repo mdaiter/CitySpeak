@@ -1,8 +1,8 @@
-<script type="text/javscript">
+<script type="text/javascript">
     function LivingRoomController($scope){
         $scope.position = "Default Mode";
         $scope.pushData = function(){
-            var push = {"furniture" : "Living Room", "position" : $scope.position};
+            var push = {"furniture" : "living room", "position" : $scope.position};
             udptransmit.initialize("18.85.34.196", 8002);
             udptransmit.sendMessage(JSON.stringify(push));
         };
