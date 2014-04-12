@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"SpeechRecognizer\"><param name=\"android-package\" value=\"com.phonegap.plugins.speech.SpeechRecognizer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Datagram\"><param name=\"android-package\" value=\"in.girish.datagram.Datagram\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"UDPTransmit\"><param name=\"android-package\" value=\"edu.uic.udptransmit.UDPTransmit\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.speech": {
+            "PACKAGE_NAME": "com.cityhome.cityspeak"
+        },
+        "in.girish.datagram": {
+            "PACKAGE_NAME": "com.cityhome.cityspeak"
+        },
+        "edu.uic.udptransmit": {
+            "PACKAGE_NAME": "com.cityhome.cityspeak"
+        }
+    },
+    "dependent_plugins": {}
+}

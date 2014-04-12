@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>My App</title>  
+  
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  <link rel="stylesheet" href="lib/onsen/css/topcoat-mobile-onsen-ios7.css">  
+  <link rel="stylesheet" href="styles/app.css"/>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="lib/onsen/js/angular/angular.js"></script>    
+  <script src="lib/onsen/js/onsenui.js"></script>    
+  <script src="js/app.js"></script> 
+  
+</head>
+
+<body>    
+<script type="text/javascript">
+    function recognizeSpeech(){
+        var maxMatches = 5;
+        var promptString = "Speak now";
+        var language = "en-US";
+
+        window.plugins.speechrecognizer.startRecognize(
+            function(result){
+                alert(result);
+                udptransmit.initialize("18.85.35.196", 8002);
+                udptransmit.sendMessage("{'speech : " +result + "'}");
+            },
+            function(errorMessage){
+                console.log("Got error: " + errorMessage);
+            }, maxMatches, promptString, language
+        );
+
+        
+    }
+</script>
+  <ons-screen>
+
+    <ons-sliding-menu 
+      behind-page="menu.html" 
+      above-page="page1.html">
+    </ons-sliding-menu>
+    
+  </ons-screen>
+ 
+</body>
+</html>

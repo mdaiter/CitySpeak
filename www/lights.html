@@ -1,0 +1,37 @@
+<script type="text/javascript">
+    function LightsCtrl($scope){
+        $scope.red = 0;
+        $scope.blue = 0;
+        $scope.green = 0;
+
+        $scope.pushData = function(){
+            var lights = {"red" : $scope.red, "green" : $scope.green, "blue": $scope.blue};
+            udptransmit.initialize("10.2.32.179", 8002);
+            udptransmit.sendMessage(JSON.stringify(lights));
+        };
+    }
+</script>
+<ons-page class="center" style="padding: 8px" ng-controller="LightsCtrl">
+    <h2>Set Light Value</h2>
+    <h5>Red</h5>
+    <h6>Current Value: {{red}}</h6>
+    <input
+        ng-model="red"
+        style="display:block; width: 100%; background-color:#FF0000"
+        type="range" name="redVal" min="0" max="255" ng-change="pushData()">
+        </input>
+    <h5>Green</h5>
+    <h6>Current Value: {{green}}</h6>
+    <input
+        ng-model="green"
+        style="display:block; width: 100%; background-color:#00FF00"
+        type="range" name="greenVal" min="0" max="255">
+        </input>
+    <h5>Blue</h5>
+    <h6>Current Value: {{blue}}</h6>
+    <input
+        ng-model="blue"
+        style="display:block; width: 100%; background-color:#0000FF"
+        type="range" name="blueVal" min="0" max="255">
+        </input>
+</ons-page>
