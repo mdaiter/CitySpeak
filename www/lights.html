@@ -6,7 +6,7 @@
 
         $scope.pushData = function(){
             var lights = {"furniture" : "lights","red" : $scope.red, "green" : $scope.green, "blue": $scope.blue};
-            udptransmit.initialize("10.2.32.179", 8002);
+            udptransmit.initialize("18.85.54.98", 8002);
             udptransmit.sendMessage(JSON.stringify(lights));
         };
     }
