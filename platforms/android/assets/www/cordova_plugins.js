@@ -8,10 +8,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/in.girish.datagram/www/datagram.js",
-        "id": "in.girish.datagram.datagram"
-    },
-    {
         "file": "plugins/edu.uic.udptransmit/www/udptransmit.js",
         "id": "edu.uic.udptransmit.udptransmit",
         "merges": [
@@ -23,7 +19,6 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "com.phonegap.plugins.speech": "1.0.0",
-    "in.girish.datagram": "0.1.0",
     "edu.uic.udptransmit": "0.0.1"
 }
 // BOTTOM OF METADATA

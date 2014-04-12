@@ -7,9 +7,6 @@
     <feature name="SpeechRecognizer">
         <param name="android-package" value="com.phonegap.plugins.speech.SpeechRecognizer" />
     </feature>
-    <feature name="Datagram">
-        <param name="android-package" value="in.girish.datagram.Datagram" />
-    </feature>
     <feature name="UDPTransmit">
         <param name="android-package" value="edu.uic.udptransmit.UDPTransmit" />
     </feature>

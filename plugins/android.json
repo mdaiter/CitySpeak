@@ -13,10 +13,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Datagram\"><param name=\"android-package\" value=\"in.girish.datagram.Datagram\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"UDPTransmit\"><param name=\"android-package\" value=\"edu.uic.udptransmit.UDPTransmit\" /></feature>",
                             "count": 1
                         }
@@ -27,9 +23,6 @@
     },
     "installed_plugins": {
         "com.phonegap.plugins.speech": {
-            "PACKAGE_NAME": "com.cityhome.cityspeak"
-        },
-        "in.girish.datagram": {
             "PACKAGE_NAME": "com.cityhome.cityspeak"
         },
         "edu.uic.udptransmit": {
