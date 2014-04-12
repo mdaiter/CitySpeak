@@ -3,7 +3,7 @@
         $scope.position = "Up";
         $scope.pushData = function(){
             var push = {"furniture" : "blinds", "position" : $scope.position};
-            udptransmit.initialize("18.85.34.196", 8002);
+            udptransmit.initialize("18.85.54.98", 8002);
             udptransmit.sendMessage(JSON.stringify(push));
         };
     }
